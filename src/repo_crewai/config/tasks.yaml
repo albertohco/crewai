@@ -1,0 +1,19 @@
+research_task:
+  description: >
+    Conduzir a entrevista do {topic}
+    E levantar a prioridade do atendimento.
+  expected_output: >
+    Responda apenas com a cor que classifique o paciente: 
+    Vermelho, Amarelo ou Verde para o resultado de triagem.
+  verbose: False
+  agent: researcher
+
+reporting_task:
+  description: >
+    Revise o contexto que você obteve e expanda cada tópico em uma seção completa para um relatório.
+    Certifique-se de que o relatório seja detalhado e contenha toda e qualquer informação relevante.
+  expected_output: >
+    Um relatório completo com os tópicos principais, cada um com uma seção completa de informações.
+    Formatado como markdown sem '```'
+  verbose: False
+  agent: reporting_analyst

@@ -1,0 +1,22 @@
+[project]
+name = "repo_crewai"
+version = "0.1.0"
+description = "repo_crewAI using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.76.9,<1.0.0",
+    "flask>=3.0.3",
+    "groq>=0.11.0",
+]
+
+[project.scripts]
+repo_crewai = "repo_crewai.main:run"
+run_crew = "repo_crewai.main:run"
+train = "repo_crewai.main:train"
+replay = "repo_crewai.main:replay"
+test = "repo_crewai.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
